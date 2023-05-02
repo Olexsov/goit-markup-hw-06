@@ -607,6 +607,7 @@ p {
 
 .footer-social-media {
   width: 208px;
+  margin-right: 80px;
 }
 
 .footer-social-media-title,
@@ -660,10 +661,10 @@ p {
 }
 
 .subscribe {
-  width: 435px;
+  width: 453px;
   height: 80px;
 
-  margin-left: auto;
+  /* margin-left: auto; */
 }
 
 .subscribe-form {
@@ -674,6 +675,8 @@ p {
 }
 
 .subscribe-form-input {
+  display: flex;
+
   width: 264px;
   height: 40px;
 
@@ -760,7 +763,10 @@ p {
 
   width: 408px;
   min-height: 584px;
-  padding: 24px;
+  padding-top: 72px;
+  padding-right: 24px;
+  padding-bottom: 24px;
+  padding-left: 24px;
 
   background-color: #fcfcfc;
   border-radius: 4px;
@@ -769,13 +775,9 @@ p {
 }
 
 .modal-btn {
-  display: block;
-  margin-left: auto;
-
-  width: 24px;
-  height: 24px;
-
-  margin-bottom: 24px;
+  position: absolute;
+  top: 24px;
+  right: 24px;
 
   background-color: var(--primary-border-color);
   border-radius: 50%;
@@ -854,6 +856,8 @@ p {
 
   transform: translateY(-50%);
 
+  fill: var(--title-text-color);
+
   transition-duration: var(--anim-duration);
   transition-timing-function: var(--anim-timing);
   transition-property: fill;
@@ -871,7 +875,7 @@ p {
   min-height: 120px;
   max-height: 180px;
   padding: 8px 16px;
-  margin-bottom: 6px;
+  margin-bottom: 16px;
 
   font-size: 12px;
   line-height: 1.17;
